@@ -102,7 +102,7 @@ __NOTE:__ While some code has already been implemented to get you started, you w
 
 
 ## Project Motivation<a name="motivation"></a>
-This project uses Convolutional Neural Networks (CNNs)! This project involves createing a pipeline that could be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, the algorithm will identify an estimate of the canine’s breed. If supplied an image of a human, the code will identify the resembling dog breed. The image below displays potential sample output of the finished project
+This project uses Convolutional Neural Networks (CNNs) and involves creating a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, the algorithm will identify an estimate of the canine’s breed. If supplied an image of a human, the code will identify the resembling dog breed. The image below displays sample output of the finished project.
  
 
 ![Sample Output][image1]

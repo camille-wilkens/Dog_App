@@ -5,18 +5,16 @@
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
 
-## Project Overview
+### Table of Contents
 
-Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! In this project, you will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
+1. [Installation](#installation)
+2. [Project Motivation](#motivation)
+3. [File Descriptions](#file)
+4. [Instructions](#instructions)
+5. [Licensing, Authors, and Acknowledgements](#licensing)
 
-![Sample Output][image1]
 
-Along with exploring state-of-the-art CNN models for classification, you will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer.  Your imperfect solution will nonetheless create a fun user experience!
-
-## Project Instructions
-
-### Instructions
-
+## Installation <a name="installation"></a>
 1. Clone the repository and navigate to the downloaded folder.
 ```	
 git clone https://github.com/udacity/dog-project.git
@@ -102,15 +100,55 @@ jupyter notebook dog_app.ipynb
 
 __NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
 
-## Evaluation
 
-Your project will be reviewed by a Udacity reviewer against the CNN project [rubric](https://review.udacity.com/#!/rubrics/810/view).  Review this rubric thoroughly, and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.
+## Project Motivation<a name="motivation"></a>
+This project uses Convolutional Neural Networks (CNNs)! This project involves createing a pipeline that could be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, the algorithm will identify an estimate of the canine’s breed. If supplied an image of a human, the code will identify the resembling dog breed. The image below displays potential sample output of the finished project
+ 
 
-## Project Submission
+![Sample Output][image1]
 
-When you are ready to submit your project, collect the following files and compress them into a single archive for upload:
-- The `dog_app.ipynb` file with fully functional code, all code cells executed and displaying output, and all questions answered.
-- An HTML or PDF export of the project notebook with the name `report.html` or `report.pdf`.
-- Any additional images used for the project that were not supplied to you for the project. __Please do not include the project data sets in the `dogImages/` or `lfw/` folders.  Likewise, please do not include the `bottleneck_features/` folder.__
 
-Alternatively, your submission could consist of the GitHub link to your repository.
+## File Descriptions<a name="file"></a>
+
+There are three components that are part of this project.
+
+1. ETL Pipeline
+
+data/process_data.py 
+
+This python script:
+Loads the messages - disaster_messages.csv and categories datasets - disaster_categories.csv 
+Merges the two datasets together
+Cleans the data
+Stores this data in a SQLite database - DisasterResponse.db
+
+2. ML Pipeline
+models/train_classifier.py 
+
+This python script:
+Loads data from the SQLite database (DisasterResponse.db) created in the etl pipeline
+Splits the dataset into training and test sets
+Builds a text processing and machine learning pipeline
+Trains and tunes a model using GridSearchCV
+Outputs results on the test set
+Exports the final model as a pickle file
+
+3. Flask Web App
+
+Created data visualizations using Plotly in the web app to display 
+
+## Instructions <a name="instructions"></a>
+
+Run the following commands in the project's root directory to set up your database and model.
+
+To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
+To run ML pipeline that trains classifier and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+Run the following command in the app's directory to run your web app. python run.py
+
+Go to http://0.0.0.0:3001/
+
+## Licensing, Authors, Acknowledgements<a name="licensing"></a>
+
+The dataset used in this analysis was created by Figure Eight https://appen.com/ and other components of this project were made available from Udacity.
+
+

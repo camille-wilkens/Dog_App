@@ -141,20 +141,27 @@ Created data visualizations using Plotly in the web app to display
 
 ## Instructions <a name="instructions"></a>
 
-1. Create a sample_images directory on the project's root directory and upload any image files that you would like to perform dog breed classification on using this algorithm.
+1. Create a sample_images directory on the project's root directory and upload any image files that you would like to perform a dog breed classification using this algorithm.
 
 2. Open the jupyter notebook - dog_app.ipynb on the project's root directory.
 
-Following the steps defined in this notebook:
+	Following the steps defined in this notebook:
 
-Step 0: Import Datasets
-Step 1: Detect Humans
-Step 2: Detect Dogs
-Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
-Step 4: Use a CNN to Classify Dog Breeds (using Transfer Learning)
-Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
-Step 6: Write your Algorithm
-Step 7: Test Your Algorithm
+	Step 0: Import Datasets
+	
+	Step 1: Detect Humans
+	
+	Step 2: Detect Dogs
+	
+	Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
+	
+	Step 4: Use a CNN to Classify Dog Breeds (using Transfer Learning)
+	
+	Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
+	
+	Step 6: Write your Algorithm
+	
+	Step 7: Test Your Algorithm
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 

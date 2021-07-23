@@ -146,7 +146,7 @@ This is the directory structure of this project:  The main file that you will wo
 			weights.best.VGG16.hdf5
 			
 
-The dog_app.ipynb notebook contains the following steps to create and test the CNN Alogorithm:
+The dog_app.ipynb notebook contains the following steps to create and test the CNN Algorithm:
 
 		Step 0: Import Datasets
 

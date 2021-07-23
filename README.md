@@ -13,7 +13,8 @@ Convolutional Neural Networks (CNN) Algorithm for a Dog Identification Applicati
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#file)
 4. [Instructions](#instructions)
-5. [Licensing, Authors, and Acknowledgements](#licensing)
+5. [Findings](#findings)
+6. [Licensing, Authors, and Acknowledgements](#licensing)
 
 
 ## Installation <a name="installation"></a>
@@ -112,29 +113,22 @@ This project uses Convolutional Neural Networks (CNNs) and involves creating a p
 
 ## File Descriptions<a name="file"></a>
 
-This is the directory structure this project:  The main file that contains the s
+This is the directory structure of this project:  The main file that you will working with is the jupyter notebook - dog_app.ipynb
 
-
+		│   CODEOWNERS
+		│   dog_app.html
 		│   dog_app.ipynb
 		│   extract_bottleneck_features.py
+		│   LICENSE.txt
 		│   README.md
 		│
+		├───.ipynb_checkpoints
 		├───bottleneck_features
 		│
 		├───haarcascades
 		│       haarcascade_frontalface_alt.xml
 		│
 		├───images
-		│       American_water_spaniel_00648.jpg
-		│       Brittany_02625.jpg
-		│       Curly-coated_retriever_03896.jpg
-		│       Labrador_retriever_06449.jpg
-		│       Labrador_retriever_06455.jpg
-		│       Labrador_retriever_06457.jpg
-		│       sample_cnn.png
-		│       sample_dog_output.png
-		│       sample_human_output.png
-		│       Welsh_springer_spaniel_08203.jpg
 		│
 		├───requirements
 		│       dog-linux-gpu.yml
@@ -148,6 +142,10 @@ This is the directory structure this project:  The main file that contains the s
 		│
 		├───sample_images
 		└───saved_models
+			.gitignore
+			weights.best.from_scratch.hdf5
+			weights.best.Resnet50.hdf5
+			weights.best.VGG16.hdf5
 
 
 
@@ -174,6 +172,19 @@ This is the directory structure this project:  The main file that contains the s
 	Step 6: Write your Algorithm
 	
 	Step 7: Test Your Algorithm
+	
+
+## Findings<a name="findings"></a>
+
+I was able to achieve a test accuracy score of 81.5% with my CNN Algorithm.   I was expecting to see some incorrect classifications and I believe due to the quality of the pictures may have lead to some of the incorrect classifications, my sample images included a horse that was labeled as a dog and human picture not being detected correctly.
+
+Possible Improvements:
+
+	1) Try another bottleneck features from a different pre-trained model such as Xception 
+	
+	2) Adjust weight initialization parameters 
+	
+	3) Rescale Images with a variety of scaling factors to achieve higher classification confidence
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 

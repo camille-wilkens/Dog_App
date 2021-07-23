@@ -112,32 +112,44 @@ This project uses Convolutional Neural Networks (CNNs) and involves creating a p
 
 ## File Descriptions<a name="file"></a>
 
-There are three components that are part of this project.
+This is the directory structure this project:  The main file that contains the s
 
-1. ETL Pipeline
 
-data/process_data.py 
+		│   dog_app.ipynb
+		│   extract_bottleneck_features.py
+		│   README.md
+		│
+		├───bottleneck_features
+		│
+		├───haarcascades
+		│       haarcascade_frontalface_alt.xml
+		│
+		├───images
+		│       American_water_spaniel_00648.jpg
+		│       Brittany_02625.jpg
+		│       Curly-coated_retriever_03896.jpg
+		│       Labrador_retriever_06449.jpg
+		│       Labrador_retriever_06455.jpg
+		│       Labrador_retriever_06457.jpg
+		│       sample_cnn.png
+		│       sample_dog_output.png
+		│       sample_human_output.png
+		│       Welsh_springer_spaniel_08203.jpg
+		│
+		├───requirements
+		│       dog-linux-gpu.yml
+		│       dog-linux.yml
+		│       dog-mac-gpu.yml
+		│       dog-mac.yml
+		│       dog-windows-gpu.yml
+		│       dog-windows.yml
+		│       requirements-gpu.txt
+		│       requirements.txt
+		│
+		├───sample_images
+		└───saved_models
 
-This python script:
-Loads the messages - disaster_messages.csv and categories datasets - disaster_categories.csv 
-Merges the two datasets together
-Cleans the data
-Stores this data in a SQLite database - DisasterResponse.db
 
-2. ML Pipeline
-models/train_classifier.py 
-
-This python script:
-Loads data from the SQLite database (DisasterResponse.db) created in the etl pipeline
-Splits the dataset into training and test sets
-Builds a text processing and machine learning pipeline
-Trains and tunes a model using GridSearchCV
-Outputs results on the test set
-Exports the final model as a pickle file
-
-3. Flask Web App
-
-Created data visualizations using Plotly in the web app to display 
 
 ## Instructions <a name="instructions"></a>
 

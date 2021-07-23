@@ -141,13 +141,20 @@ Created data visualizations using Plotly in the web app to display
 
 ## Instructions <a name="instructions"></a>
 
-Run the following commands in the project's root directory to set up your database and model.
+1. Create a sample_images directory on the project's root directory and upload any image files that you would like to perform dog breed classification on using this algorithm.
 
-To run ETL pipeline that cleans data and stores in database python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
-To run ML pipeline that trains classifier and saves python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
-Run the following command in the app's directory to run your web app. python run.py
+2. Open the jupyter notebook - dog_app.ipynb on the project's root directory.
 
-Go to http://0.0.0.0:3001/
+Following the steps defined in this notebook:
+
+Step 0: Import Datasets
+Step 1: Detect Humans
+Step 2: Detect Dogs
+Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
+Step 4: Use a CNN to Classify Dog Breeds (using Transfer Learning)
+Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
+Step 6: Write your Algorithm
+Step 7: Test Your Algorithm
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 

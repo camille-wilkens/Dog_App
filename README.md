@@ -5,7 +5,7 @@
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
 # Dog Breed Classifier Capstone Project
-Convolutional Neural Networks (CNN) Algorithm for a Dog Identification Application
+Convolutional Neural Networks (CNN) Algorithm for a Dog Breed Classifier
 
 ### Table of Contents
 
@@ -122,7 +122,6 @@ This is the directory structure of this project:  The main file that you will wo
 		│   LICENSE.txt
 		│   README.md
 		│
-		├───.ipynb_checkpoints
 		├───bottleneck_features
 		│
 		├───haarcascades
@@ -142,12 +141,28 @@ This is the directory structure of this project:  The main file that you will wo
 		│
 		├───sample_images
 		└───saved_models
-			.gitignore
 			weights.best.from_scratch.hdf5
 			weights.best.Resnet50.hdf5
 			weights.best.VGG16.hdf5
+			
 
+The dog_app.ipynb notebook contains the following steps to create and test the CNN Alogorithm:
 
+		Step 0: Import Datasets
+
+		Step 1: Detect Humans
+
+		Step 2: Detect Dogs
+
+		Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
+
+		Step 4: Use a CNN to Classify Dog Breeds (using Transfer Learning)
+
+		Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
+
+		Step 6: Write your Algorithm
+
+		Step 7: Test Your Algorithm
 
 ## Instructions <a name="instructions"></a>
 
@@ -155,28 +170,11 @@ This is the directory structure of this project:  The main file that you will wo
 
 2. Open the jupyter notebook - dog_app.ipynb on the project's root directory.
 
-	Following the steps defined in this notebook:
-
-	Step 0: Import Datasets
-	
-	Step 1: Detect Humans
-	
-	Step 2: Detect Dogs
-	
-	Step 3: Create a CNN to Classify Dog Breeds (from Scratch)
-	
-	Step 4: Use a CNN to Classify Dog Breeds (using Transfer Learning)
-	
-	Step 5: Create a CNN to Classify Dog Breeds (using Transfer Learning)
-	
-	Step 6: Write your Algorithm
-	
-	Step 7: Test Your Algorithm
 	
 
 ## Findings<a name="findings"></a>
 
-I was able to achieve a test accuracy score of 81.5% with my CNN Algorithm.   I was expecting to see some incorrect classifications and I believe due to the quality of the pictures may have lead to some of the incorrect classifications, my sample images included a horse that was labeled as a dog and human picture not being detected correctly.
+I was able to achieve a test accuracy score of 81.5% with my CNN Algorithm.   I was expecting to see some incorrect classifications and I believe due to the quality of the pictures may have led to some of the incorrect classifications, my sample images included a horse that was labeled as a dog and human picture not being detected correctly.
 
 Possible Improvements:
 

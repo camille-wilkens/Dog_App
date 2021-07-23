@@ -4,7 +4,8 @@
 [image2]: ./images/vgg16_model.png "VGG-16 Model Keras Layers"
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
-####Dog Breed Classifier Capstone Project
+#Dog Breed Classifier Capstone Project
+Convolutional Neural Networks (CNN) Algorithm for a Dog Identification Application
 
 ### Table of Contents
 
